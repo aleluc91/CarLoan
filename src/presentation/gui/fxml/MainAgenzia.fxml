@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" minWidth="-Infinity" prefHeight="481.0" prefWidth="777.0" styleClass="sfondo" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.control.ControllerMainAgenzia">
+   <children>
+      <Pane minWidth="-Infinity" prefHeight="89.0" prefWidth="853.0" styleClass="header">
+         <children>
+            <Label layoutX="207.0" layoutY="8.0" styleClass="label_header" text="Gestione Agenzia " />
+            <ImageView fx:id="imgPrincipale" fitHeight="73.0" fitWidth="86.0" layoutX="88.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lblAgenzia" layoutX="595.0" layoutY="67.0" prefHeight="17.0" prefWidth="182.0" styleClass="label_semplice" />
+         </children>
+      </Pane>
+      <TabPane layoutX="59.0" layoutY="95.0" prefHeight="389.0" prefWidth="672.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Contratti Attivi">
+               <content>
+                  <AnchorPane prefHeight="372.0" prefWidth="670.0" styleClass="sfondo">
+                     <children>
+                        <TableView fx:id="tabellaContratto" layoutX="76.0" layoutY="63.0" prefHeight="268.0" prefWidth="519.0">
+                          <columns>
+                            <TableColumn fx:id="colonnaCodice" editable="false" prefWidth="78.0" sortable="false" text="Codice" />
+                            <TableColumn fx:id="colonnaCliente" editable="false" prefWidth="210.0" sortable="false" text="Dati Cliente">
+                                 <columns>
+                                    <TableColumn fx:id="colonnaNome" editable="false" prefWidth="67.0" sortable="false" text="Nome" />
+                                    <TableColumn fx:id="colonnaCognome" editable="false" prefWidth="66.0" sortable="false" text="Cognome" />
+                                    <TableColumn fx:id="colonnaTelefono" editable="false" prefWidth="64.0" sortable="false" text="Telefono" />
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="colonnaDataInizio" editable="false" prefWidth="90.0" sortable="false" text="Data Inizio" />
+                              <TableColumn fx:id="colonnaDataFine" editable="false" prefWidth="84.0" sortable="false" text="Data Fine" />
+                              <TableColumn fx:id="colonnaAcconto" editable="false" prefWidth="69.0" sortable="false" text="Acconto" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnNuovoContratto" layoutX="76.0" layoutY="40.0" mnemonicParsing="false" onAction="#gestisciNuovoContratto" prefHeight="27.0" prefWidth="147.0" text="NUOVO CONTRATTO" />
+                        <Button fx:id="btnRiepilogo" layoutX="231.0" layoutY="40.0" mnemonicParsing="false" onAction="#gestisciRiepilogo" prefHeight="27.0" prefWidth="147.0" text="RIEPILIGO" />
+                        <Button fx:id="btnChiudiContratto" layoutX="386.0" layoutY="40.0" mnemonicParsing="false" onAction="#gestisciChiudiContratto" prefHeight="27.0" prefWidth="147.0" text="CHIUDI CONTRATTO" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab text="Gestione macchine">
+               <content>
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="609.0">
+                     <children>
+                        <Button fx:id="btnModifica" focusTraversable="false" layoutX="95.0" layoutY="41.0" mnemonicParsing="false" onAction="#gestisciModifica" prefHeight="27.0" prefWidth="148.0" styleClass="bottone" text="MODIFICA" />
+                        <TableView fx:id="tabellaMacchina" focusTraversable="false" layoutX="95.0" layoutY="74.0" prefHeight="268.0" prefWidth="482.0">
+                           <columns>
+                              <TableColumn fx:id="colonnaTarga" editable="false" maxWidth="273.0" minWidth="64.0" prefWidth="67.0" resizable="false" sortable="false" text="Targa" />
+                              <TableColumn fx:id="colonnaModelloMacchina" editable="false" maxWidth="279.0" minWidth="80.0" prefWidth="98.0" resizable="false" sortable="false" text="Modello" />
+                              <TableColumn fx:id="colonnaAgenzia" editable="false" prefWidth="62.0" sortable="false" text="Agenzia" />
+                              <TableColumn fx:id="colonnaNoleggiata" editable="false" prefWidth="74.0" sortable="false" text="Noleggiata" />
+                              <TableColumn fx:id="colonnaManutenzione" editable="false" prefWidth="84.0" sortable="false" text="Manutenzione" />
+                              <TableColumn fx:id="colonnaChilometraggio" editable="false" prefWidth="95.0" sortable="false" text="Chilometraggio" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

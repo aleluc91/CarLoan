@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" minWidth="-Infinity" prefHeight="536.0" prefWidth="597.0" styleClass="sfondo" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.control.ControllerInserimentoDettagli">
+   <children>
+      <Pane layoutX="32.0" layoutY="100.0" prefHeight="379.0" prefWidth="533.0" styleClass="pannello_semplice">
+         <children>
+               <Label layoutX="57.0" layoutY="42.0" styleClass="label_semplice" text="Data inizio :" />
+               <DatePicker fx:id="dataInizio" editable="false" layoutX="57.0" layoutY="59.0" prefHeight="28.0" prefWidth="176.0" styleClass="textbox_semplice" />
+               <Label fx:id="lblErroreAcconto" layoutX="297.0" layoutY="181.0" prefHeight="25.0" prefWidth="174.0" styleClass="label_errore" />
+               <Label fx:id="lblErroreDataFine" layoutX="296.0" layoutY="88.0" prefHeight="25.0" prefWidth="176.0" styleClass="label_errore" />
+            <Label layoutX="57.0" layoutY="135.0" styleClass="label_semplice" text="Costo approssimativo :" />
+            <Label fx:id="lblCosto" layoutX="58.0" layoutY="150.0" prefHeight="17.0" prefWidth="121.0" styleClass="label_semplice" />
+               <Label layoutX="296.0" layoutY="42.0" styleClass="label_semplice" text="Data fine :" />
+               <Label layoutX="296.0" layoutY="135.0" styleClass="label_semplice" text="Acconto :" />
+               <TextField fx:id="txtAcconto" layoutX="297.0" layoutY="153.0" prefHeight="25.0" prefWidth="174.0" styleClass="textbox_semplice" />
+               <DatePicker fx:id="dataFine" editable="false" layoutX="296.0" layoutY="59.0" onAction="#gestisciCosto" prefHeight="25.0" prefWidth="176.0" styleClass="textbox_semplice" />
+               <Label fx:id="lblErroreDataInizio" layoutX="57.0" layoutY="88.0" prefHeight="25.0" prefWidth="176.0" styleClass="label_errore" />
+            <Label layoutX="58.0" layoutY="232.0" styleClass="label_semplice" text="Agenzia Ritorno :" />
+            <ComboBox fx:id="cmbAgenzia" layoutX="57.0" layoutY="247.0" prefHeight="25.0" prefWidth="176.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreAgenzia" layoutX="58.0" layoutY="285.0" prefHeight="25.0" prefWidth="174.0" styleClass="label_errore" />
+         </children>
+      </Pane>
+      <Button fx:id="btnConferma" layoutX="443.0" layoutY="497.0" mnemonicParsing="false" onAction="#gestisciConferma" prefHeight="27.0" prefWidth="122.0" styleClass="bottone" text="CONFERMA" />
+      <Pane minWidth="-Infinity" prefHeight="89.0" prefWidth="663.0" styleClass="header">
+         <children>
+            <Label layoutX="125.0" layoutY="14.0" styleClass="label_header" text="Dettagli Contratto" />
+            <ImageView fx:id="imgPrinciapale" fitHeight="79.0" fitWidth="92.0" layoutX="33.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Button fx:id="btnAnnulla" layoutX="313.0" layoutY="497.0" mnemonicParsing="false" onAction="#gestisciBottoneAnnulla" prefHeight="27.0" prefWidth="122.0" text="ANNULLA" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" minWidth="-Infinity" prefHeight="526.0" prefWidth="564.0" styleClass="sfondo" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.control.ControllerInserimentoAgenzia">
+   <children>
+      <Pane minWidth="-Infinity" prefHeight="89.0" prefWidth="606.0" styleClass="header">
+         <children>
+            <Label fx:id="lblTitolo" layoutX="148.0" layoutY="8.0" styleClass="label_header" text="Nuova Agenzia">
+               <effect>
+                  <DropShadow color="#000000c1" spread="1.0" />
+               </effect></Label>
+            <ImageView fx:id="imgPrincipale" fitHeight="73.0" fitWidth="130.0" layoutX="44.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" styleClass="header" />
+         </children>
+      </Pane>
+      <Pane layoutX="12.0" layoutY="98.0" minWidth="-Infinity" prefHeight="349.0" prefWidth="541.0" styleClass="pannello_semplice">
+         <children>
+            <Label layoutX="46.0" layoutY="26.0" styleClass="label_semplice" text="Username accesso :" />
+            <TextField fx:id="txtUsername" layoutX="46.0" layoutY="41.0" prefHeight="25.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreUsername" layoutX="46.0" layoutY="66.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+            <Label layoutX="290.0" layoutY="25.0" prefHeight="17.0" prefWidth="204.0" styleClass="label_semplice" text="Password accesso :" />
+            <PasswordField fx:id="txtPassword" layoutX="290.0" layoutY="41.0" prefHeight="25.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErrorePassword" layoutX="290.0" layoutY="66.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+            <Label layoutX="46.0" layoutY="107.0" styleClass="label_semplice" text="Codice agenzia :" />
+            <TextField fx:id="txtCodiceAgenzia" layoutX="46.0" layoutY="122.0" prefHeight="25.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreCodice" layoutX="46.0" layoutY="147.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+            <Label layoutX="290.0" layoutY="107.0" styleClass="label_semplice" text="Nome Agenzia :" />
+            <TextField fx:id="txtNomeAgenzia" layoutX="290.0" layoutY="122.0" prefHeight="25.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreNome" layoutX="290.0" layoutY="147.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+            <Label layoutX="46.0" layoutY="188.0" styleClass="label_semplice" text="Indirizzo :" />
+            <TextField fx:id="txtIndirizzo" layoutX="46.0" layoutY="203.0" prefHeight="25.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreIndirizzo" layoutX="46.0" layoutY="228.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+            <Label layoutX="290.0" layoutY="188.0" styleClass="label_semplice" text="Città :" />
+            <TextField fx:id="txtCitta" layoutX="290.0" layoutY="203.0" prefHeight="25.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreCitta" layoutX="290.0" layoutY="228.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+            <Label layoutX="46.0" layoutY="269.0" styleClass="label_semplice" text="CAP :" />
+            <TextField fx:id="txtCAP" layoutX="46.0" layoutY="284.0" prefHeight="25.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreCAP" layoutX="46.0" layoutY="309.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+         </children>
+      </Pane>
+      <Pane layoutX="12.0" layoutY="447.0" prefHeight="73.0" prefWidth="541.0" styleClass="sfondo">
+         <children>
+            <Button fx:id="btnConferma" layoutX="414.0" layoutY="23.0" mnemonicParsing="false" onAction="#gestisciBottoneConferma" prefHeight="25.0" prefWidth="121.0" styleClass="bottone" text="CONFERMA" />
+            <Button fx:id="btnIndietro" layoutX="279.0" layoutY="23.0" mnemonicParsing="false" onAction="#gestisciBottoneIndietro" prefHeight="25.0" prefWidth="121.0" styleClass="bottone_rosso" text="ANNULLA" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

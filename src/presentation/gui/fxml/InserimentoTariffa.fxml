@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" minWidth="-Infinity" prefHeight="578.0" prefWidth="383.0" styleClass="sfondo" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.control.ControllerInserimentoTariffa">
+   <children>
+      <Pane layoutX="23.0" layoutY="108.0" prefHeight="411.0" prefWidth="337.0" styleClass="pannello_semplice">
+         <children>
+            <Label layoutX="59.0" layoutY="54.0" styleClass="label_semplice" text="Tipo :" />
+            <TextField fx:id="txtTipo" layoutX="59.0" layoutY="71.0" prefHeight="25.0" prefWidth="223.0" promptText="Giornaliero , Settimanale . . . . . " styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreTipo" layoutX="60.0" layoutY="96.0" prefHeight="25.0" prefWidth="223.0" styleClass="label_errore" />
+            <Label layoutX="60.0" layoutY="147.0" styleClass="label_semplice" text="Chilometri :" />
+            <TextField fx:id="txtChilometri" layoutX="60.0" layoutY="162.0" prefHeight="25.0" prefWidth="223.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreChilometri" layoutX="60.0" layoutY="190.0" prefHeight="25.0" prefWidth="223.0" styleClass="label_errore" />
+            <Label layoutX="61.0" layoutY="241.0" styleClass="label_semplice" text="Giorni : " />
+            <TextField fx:id="txtGiorni" layoutX="59.0" layoutY="256.0" prefHeight="25.0" prefWidth="223.0" promptText="Periodo validità tariffa" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreGiorni" layoutX="59.0" layoutY="284.0" prefHeight="17.0" prefWidth="223.0" styleClass="label_errore" />
+            <Label layoutX="60.0" layoutY="335.0" styleClass="label_semplice" text="Tariffa :" />
+            <TextField fx:id="txtTariffa" layoutX="59.0" layoutY="352.0" prefHeight="25.0" prefWidth="223.0" promptText="Tariffa km illimitati" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreTariffa" graphicTextGap="0.0" layoutX="59.0" layoutY="380.0" prefHeight="25.0" prefWidth="223.0" styleClass="label_errore" />
+         </children>
+      </Pane>
+      <Pane layoutY="519.0" prefHeight="51.0" prefWidth="383.0">
+         <children>
+            <Button fx:id="btnConferma" layoutX="239.0" layoutY="12.0" mnemonicParsing="false" onAction="#gestisciBottoneConferma" prefHeight="25.0" prefWidth="116.0" styleClass="bottone" text="CONFERMA" />
+            <Button layoutX="115.0" layoutY="12.0" mnemonicParsing="false" onAction="#gestisciBottoneAnnulla" prefHeight="27.0" prefWidth="116.0" text="ANNULLA" />
+         </children>
+      </Pane>
+      <Pane minWidth="-Infinity" prefHeight="89.0" prefWidth="458.0" styleClass="header">
+         <children>
+            <Label fx:id="lblPrincipale" layoutX="61.0" layoutY="19.0" prefHeight="51.0" prefWidth="281.0" styleClass="label_header2" text="   Nuova Tariffa" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

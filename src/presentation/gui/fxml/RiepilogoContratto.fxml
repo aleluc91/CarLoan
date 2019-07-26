@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="670.0" prefWidth="638.0" styleClass="sfondo" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.control.ControllerRiepilogoContratto">
+   <children>
+      <Pane layoutX="41.0" layoutY="26.0" prefHeight="591.0" prefWidth="556.0" styleClass="pannello_semplice">
+         <children>
+            <Label layoutX="54.0" layoutY="37.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" text="Codice :" />
+            <Label fx:id="lblCodice" layoutX="54.0" layoutY="54.0" prefHeight="17.0" prefWidth="84.0" />
+            <Label fx:id="lblNome" layoutX="54.0" layoutY="122.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" />
+            <Label layoutX="54.0" layoutY="105.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" text="Nome :" />
+            <Label fx:id="lblCognome" layoutX="233.0" layoutY="122.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" />
+            <Label layoutX="233.0" layoutY="105.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" text="Cognome :" />
+            <Label fx:id="lblTelefono" layoutX="416.0" layoutY="122.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" />
+            <Label layoutX="416.0" layoutY="105.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" text="Telefono :" />
+            <Label fx:id="lblDataInizio" layoutX="54.0" layoutY="190.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" />
+            <Label layoutX="54.0" layoutY="173.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" text="Data Inizio :" />
+            <Label fx:id="lblDataFine" layoutX="233.0" layoutY="190.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" />
+            <Label layoutX="233.0" layoutY="173.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" text="Data Fine :" />
+            <Label fx:id="lblAcconto" layoutX="416.0" layoutY="188.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" />
+            <Label layoutX="416.0" layoutY="171.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" text="Acconto :" />
+            <Label layoutX="54.0" layoutY="241.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" text="Agenzia :" />
+            <Label fx:id="lblAgenzia" layoutX="54.0" layoutY="258.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" />
+            <Label fx:id="lblAgenziaRitorno" layoutX="233.0" layoutY="258.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" />
+            <Label layoutX="233.0" layoutY="241.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" text="Agenzia Ritorno:" />
+            <Label fx:id="Base" layoutX="54.0" layoutY="309.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" text="Base :" />
+            <Label fx:id="lblBase" layoutX="54.0" layoutY="326.0" prefHeight="17.0" prefWidth="84.0" styleClass="label_semplice" />
+            <Label fx:id="lblChilometraggio" layoutX="233.0" layoutY="326.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" />
+            <Label fx:id="Base1" layoutX="233.0" layoutY="309.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" text="Chilometraggio :" />
+            <Label fx:id="lblFascia" layoutX="416.0" layoutY="326.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" />
+            <Label layoutX="416.0" layoutY="309.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" text="Fascia :" />
+            <Label layoutX="54.0" layoutY="377.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" text="Modello :" />
+            <Label fx:id="lblModello" layoutX="54.0" layoutY="394.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" />
+            <Label fx:id="lblTarga" layoutX="233.0" layoutY="394.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" />
+            <Label layoutX="233.0" layoutY="377.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" text="Targa :" />
+            <Label fx:id="lblCostoParziale" layoutX="54.0" layoutY="461.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" />
+            <Label layoutX="54.0" layoutY="445.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" text="Costo Parziale" />
+            <Label layoutX="54.0" layoutY="516.0" prefHeight="17.0" prefWidth="119.0" styleClass="label_semplice" text="Chilometri percorsi :" />
+            <TextField fx:id="txtChilometri" layoutX="54.0" layoutY="533.0" />
+            <Label layoutX="252.0" layoutY="516.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" text="Costo Totale :" />
+            <Label fx:id="lblCostoTotale" layoutX="252.0" layoutY="533.0" prefHeight="17.0" prefWidth="98.0" styleClass="label_semplice" />
+            <Label fx:id="lblErroreChilometri" layoutX="54.0" layoutY="558.0" prefHeight="25.0" prefWidth="149.0" styleClass="label_errore" />
+         </children>
+      </Pane>
+      <Button fx:id="btnChiudi" layoutX="462.0" layoutY="625.0" mnemonicParsing="false" onAction="#gestisciChiudi" prefHeight="25.0" prefWidth="136.0" text="Chiudi" />
+      <Button fx:id="btnElimina" layoutX="306.0" layoutY="625.0" mnemonicParsing="false" onAction="#eliminaContratto" prefHeight="27.0" prefWidth="136.0" text="Elimina Contratto" />
+   </children>
+</AnchorPane>

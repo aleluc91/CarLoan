@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="777.0" styleClass="sfondo" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.control.ControllerAmministrazione">
+   <children>
+      <TabPane layoutX="15.0" layoutY="104.0" prefHeight="418.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab closable="false" text="Gestione Agenzie">
+               <content>
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="394.0" prefWidth="750.0">
+                     <children>
+                       <Button fx:id="btnAggiungiAgenzia" focusTraversable="false" layoutX="60.0" layoutY="41.0" mnemonicParsing="false" onAction="#gestisciAggiungiAgenzia" prefHeight="27.0" prefWidth="85.0" text="AGGIUNGI" />
+                  	 <Button fx:id="btnModificaAgenzia" focusTraversable="false" layoutX="153.0" layoutY="41.0" mnemonicParsing="false" onAction="#gestisciModificaAgenzia" prefHeight="27.0" prefWidth="85.0" text="MODIFICA" />	
+                       <TableView fx:id="tabellaAgenzia" focusTraversable="false" layoutX="60.0" layoutY="74.0" prefHeight="278.0" prefWidth="634.0">
+                  		<columns>
+                  			<TableColumn fx:id="colonnaCodice" editable="false" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" resizable="false" sortable="false" text="Codice" />
+                  			<TableColumn fx:id="colonnaNome" editable="false" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" resizable="false" sortable="false" text="Nome" />
+                  			<TableColumn fx:id="colonnaIndirizzo" editable="false" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" resizable="false" sortable="false" text="Indirizzo" />
+                  			<TableColumn fx:id="colonnaCitta" editable="false" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" resizable="false" sortable="false" text="Citta" />
+                  			<TableColumn fx:id="colonnaCap" editable="false" maxWidth="82.0" minWidth="82.0" prefWidth="82.0" resizable="false" sortable="false" text="CAP" />
+                  		</columns>
+                           <effect>
+                              <DropShadow blurType="ONE_PASS_BOX" />
+                           </effect>
+                  	 </TableView>
+                  	 <Button fx:id="btnEliminaAgenzia" focusTraversable="false" layoutX="245.0" layoutY="41.0" mnemonicParsing="false" onAction="#gestisciEliminaAgenzia" prefHeight="27.0" prefWidth="85.0" text="ELIMINA" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab closable="false" text="Gestione Fasce">
+               <content>
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="269.0">
+                     <children>
+                  	 <Button fx:id="btnModificaFascia" focusTraversable="false" layoutX="251.0" layoutY="49.0" mnemonicParsing="false" onAction="#gestisciModificaFascia" prefHeight="27.0" prefWidth="85.0" text="MODIFICA" />
+                  	 <TableView fx:id="tabellaFascia" focusTraversable="false" layoutX="158.0" layoutY="79.0" prefHeight="278.0" prefWidth="428.0">
+                  		<columns>
+                  			<TableColumn fx:id="colonnaIdentificativo" editable="false" maxWidth="92.0" minWidth="57.0" prefWidth="92.0" resizable="false" sortable="false" text="Identificativo" />
+                  			<TableColumn fx:id="colonnaDescrizione" editable="false" maxWidth="289.0" minWidth="254.0" prefWidth="254.0" resizable="false" sortable="false" text="Descrizione" />
+                  			<TableColumn fx:id="colonnaCosto" editable="false" maxWidth="95.0" minWidth="80.0" prefWidth="86.0" resizable="false" sortable="false" text="Costo per km" />
+                  		</columns>
+                  	</TableView>
+                  	 <Button fx:id="btnEliminaFascia" focusTraversable="false" layoutX="344.0" layoutY="49.0" mnemonicParsing="false" onAction="#gestisciEliminaFascia" prefHeight="27.0" prefWidth="85.0" text="ELIMINA" />
+                       <Button fx:id="btnAggiungiFascia" focusTraversable="false" layoutX="158.0" layoutY="49.0" mnemonicParsing="false" onAction="#gestisciAggiungiFascia" prefHeight="27.0" prefWidth="85.0" text="AGGIUNGI" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+            <Tab closable="false" text="Gestione Modelli">
+               <content>
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="323.0">
+                     <children>
+                  	 <Button fx:id="btnModificaModello" focusTraversable="false" layoutX="306.0" layoutY="49.0" mnemonicParsing="false" onAction="#gestisciModificaModello" prefHeight="27.0" prefWidth="85.0" text="MODIFICA" />
+                       <Button fx:id="btnAggiungiModello" focusTraversable="false" layoutX="214.0" layoutY="49.0" mnemonicParsing="false" onAction="#gestisciAggiungiModello" prefHeight="27.0" prefWidth="85.0" text="AGGIUNGI" />
+                  	 <Button fx:id="btnEliminaModello" focusTraversable="false" layoutX="397.0" layoutY="49.0" mnemonicParsing="false" onAction="#gestisciEliminaModello" prefHeight="27.0" prefWidth="86.0" text="ELIMINA" />
+                       <TableView fx:id="tabellaModello" focusTraversable="false" layoutX="214.0" layoutY="84.0" prefHeight="278.0" prefWidth="283.0">
+                  		<columns>
+                  			<TableColumn fx:id="colonnaModello" editable="false" maxWidth="273.0" minWidth="92.0" prefWidth="173.0" resizable="false" sortable="false" text="Modello" />
+                  			<TableColumn fx:id="colonnaFascia" editable="false" maxWidth="279.0" minWidth="80.0" prefWidth="114.0" resizable="false" sortable="false" text="Fascia" />
+                  		</columns>
+                  	</TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Gestione Macchine">
+               <content>
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="475.0">
+                     <children>
+                  	 <Button fx:id="btnAggiungiMacchina" focusTraversable="false" layoutX="122.0" layoutY="49.0" mnemonicParsing="false" onAction="#gestisciAggiungiMacchina" prefHeight="27.0" prefWidth="85.0" text="AGGIUNGI" />
+                  	<TableView fx:id="tabellaMacchina" focusTraversable="false" layoutX="122.0" layoutY="82.0" prefHeight="278.0" prefWidth="489.0">
+                  		<columns>
+                  			<TableColumn fx:id="colonnaTarga" editable="false" maxWidth="273.0" minWidth="64.0" prefWidth="67.0" resizable="false" sortable="false" text="Targa" />
+                  			<TableColumn fx:id="colonnaModelloMacchina" editable="false" maxWidth="279.0" minWidth="80.0" prefWidth="98.0" resizable="false" sortable="false" text="Modello" />
+                              <TableColumn fx:id="colonnaAgenzia" editable="false" prefWidth="71.0" sortable="false" text="Agenzia" />
+                              <TableColumn fx:id="colonnaNoleggiata" editable="false" prefWidth="75.0" sortable="false" text="Noleggiata" />
+                              <TableColumn fx:id="colonnaManutenzione" editable="false" prefWidth="85.0" sortable="false" text="Manutenzione" />
+                              <TableColumn fx:id="colonnaChilometraggio" editable="false" prefWidth="96.0" sortable="false" text="Chilometraggio" />
+                  		</columns>
+                  	</TableView>
+                  	 <Button fx:id="btnModificaMacchina" focusTraversable="false" layoutX="217.0" layoutY="49.0" mnemonicParsing="false" onAction="#gestisciModificaMacchina" prefHeight="27.0" prefWidth="85.0" text="MODIFICA" />
+                  	 <Button fx:id="btnEliminaMacchina" focusTraversable="false" layoutX="312.0" layoutY="49.0" mnemonicParsing="false" onAction="#gestisciEliminaMacchina" prefHeight="27.0" prefWidth="85.0" text="ELIMINA" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Gestione Tariffe">
+               <content>
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="290.0">
+                     <children>
+                        <TableView fx:id="tabellaTariffa" layoutX="245.0" layoutY="81.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="278.0">
+                          <columns>
+                            <TableColumn fx:id="colonnaTipo" editable="false" prefWidth="111.0" sortable="false" text="Tipo " />
+                            <TableColumn fx:id="colonnaChilometri" editable="false" prefWidth="67.0" sortable="false" text="KM" />
+                              <TableColumn fx:id="colonnaTariffa" editable="false" prefWidth="78.0" sortable="false" text="Tariffa" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnAggiungiTariffa" layoutX="245.0" layoutY="49.0" mnemonicParsing="false" onAction="#gestisciAggiungiTariffa" prefHeight="27.0" prefWidth="85.0" text="AGGIUNGI" />
+                        <Button fx:id="btnModificaTariffa" layoutX="332.0" layoutY="49.0" mnemonicParsing="false" onAction="#gestisciModificaTariffa" prefHeight="27.0" prefWidth="85.0" text="MODIFICA" />
+                        <Button fx:id="btnEliminaTariffa" layoutX="420.0" layoutY="49.0" mnemonicParsing="false" onAction="#gestisciEliminaTariffa" prefHeight="27.0" prefWidth="75.0" text="ELIMINA" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Pane minWidth="-Infinity" prefHeight="89.0" prefWidth="827.0" styleClass="header">
+         <children>
+            <Label layoutX="138.0" layoutY="8.0" prefHeight="73.0" prefWidth="561.0" styleClass="label_header" text="Amministrazione" />
+            <Label layoutX="530.0" layoutY="67.0" styleClass="label_semplice" text="Benvenuto , sei loggato come amministratore!" />
+            <ImageView fx:id="imgPrincipale" fitHeight="82.0" fitWidth="75.0" layoutX="33.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+
+   </children>
+</AnchorPane>

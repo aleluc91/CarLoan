@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" minWidth="-Infinity" prefHeight="539.0" prefWidth="586.0" styleClass="sfondo" stylesheets="@css/stile.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.control.ControllerInserimentoMacchina">
+   <children>
+      <Pane layoutX="16.0" layoutY="110.0" prefHeight="386.0" prefWidth="554.0" styleClass="pannello_semplice">
+         <children>
+            <Label layoutX="42.0" layoutY="24.0" styleClass="label_semplice" text="Targa :" />
+            <TextField fx:id="txtTarga" layoutX="42.0" layoutY="42.0" prefHeight="25.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreTarga" layoutX="42.0" layoutY="70.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+            <Label layoutX="298.0" layoutY="23.0" prefHeight="17.0" prefWidth="204.0" styleClass="label_semplice" text="Fascia :" />
+            <ComboBox fx:id="cmbFascia" layoutX="298.0" layoutY="42.0" prefHeight="28.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreFascia" layoutX="298.0" layoutY="75.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+            <Label layoutX="42.0" layoutY="123.0" styleClass="label_semplice" text="Modello :" />
+            <ComboBox fx:id="cmbModello" layoutX="42.0" layoutY="138.0" prefHeight="28.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreModello" layoutX="42.0" layoutY="171.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+            <Label layoutX="298.0" layoutY="123.0" styleClass="label_semplice" text="Agenzia :" />
+            <ComboBox fx:id="cmbAgenzia" layoutX="298.0" layoutY="138.0" prefHeight="28.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreAgenzia" layoutX="298.0" layoutY="171.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+            <Label layoutX="46.0" layoutY="216.0" styleClass="label_semplice" text="Noleggiata :" />
+            <ComboBox fx:id="cmbNoleggiata" layoutX="46.0" layoutY="231.0" prefHeight="28.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreNoleggiata" layoutX="46.0" layoutY="264.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+            <Label layoutX="46.0" layoutY="307.0" styleClass="label_semplice" text="Ultimo chilometraggio :" />
+            <TextField fx:id="txtChilometraggio" layoutX="46.0" layoutY="320.0" prefHeight="25.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreChilometraggio" layoutX="46.0" layoutY="348.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+            <Label fx:id="lblErroreManutenzione" layoutX="298.0" layoutY="264.0" prefHeight="25.0" prefWidth="204.0" styleClass="label_errore" />
+            <ComboBox fx:id="cmbManutenzione" layoutX="298.0" layoutY="231.0" prefHeight="28.0" prefWidth="204.0" styleClass="textbox_semplice" />
+            <Label layoutX="298.0" layoutY="216.0" styleClass="label_semplice" text="Manutenzione :" />
+         </children>
+      </Pane>
+      <Pane layoutY="496.0" prefHeight="59.0" prefWidth="586.0" styleClass="sfondo">
+         <children>
+            <Button fx:id="btnConferma" layoutX="444.0" layoutY="17.0" mnemonicParsing="false" onAction="#gestisciBottoneConferma" prefHeight="25.0" prefWidth="121.0" styleClass="bottone" text="CONFERMA" />
+            <Button fx:id="btnAnnulla" layoutX="307.0" layoutY="17.0" mnemonicParsing="false" onAction="#gestisciBottoneAnnulla" prefHeight="27.0" prefWidth="121.0" text="ANNULLA" />
+         </children>
+      </Pane>
+      <Pane minWidth="-Infinity" prefHeight="89.0" prefWidth="661.0" styleClass="header">
+         <children>
+            <Label fx:id="lblTitolo" layoutX="120.0" layoutY="8.0" styleClass="label_header" />
+            <ImageView fx:id="imgPrincipale" fitHeight="73.0" fitWidth="82.0" layoutX="26.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

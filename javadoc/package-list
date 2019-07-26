@@ -1,0 +1,14 @@
+
+business.applicationservice
+business.applicationservice.factory
+business.applicationservice.transfer
+entity
+integration.dao
+presentation.controller
+presentation.gui
+presentation.gui.control
+presentation.gui.modelli_tabella
+presentation.gui.modelli_tabella.carica_modelli
+utility
+utility.controlli_esistenza
+utility.validazione

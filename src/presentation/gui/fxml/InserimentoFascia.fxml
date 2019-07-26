@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="387.0" styleClass="sfondo" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.control.ControllerInserimentoFascia">
+   <children>
+      <Pane layoutX="14.0" layoutY="112.0" prefHeight="313.0" prefWidth="359.0" styleClass="pannello_semplice">
+         <children>
+            <Label layoutX="27.0" layoutY="28.0" prefHeight="17.0" prefWidth="153.0" styleClass="label_semplice" text="Identificativo Fascia :" />
+            <TextField fx:id="txtIdentificativo" focusTraversable="false" layoutX="27.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="298.0" promptText="A , B , C , . . . . ." styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreIdentificativo" layoutX="27.0" layoutY="70.0" prefHeight="25.0" prefWidth="298.0" styleClass="label_errore" />
+            <Label layoutX="27.0" layoutY="109.0" styleClass="label_semplice" text="Requisiti :" />
+            <TextArea fx:id="txtRequisiti" focusTraversable="false" layoutX="27.0" layoutY="126.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="298.0" promptText="cinque porte ,  tre porte , . . . . ." styleClass="textbox_semplice" wrapText="true" />
+            <Label fx:id="lblErroreRequisiti" layoutX="27.0" layoutY="173.0" maxHeight="-Infinity" prefHeight="25.0" prefWidth="298.0" styleClass="label_errore" />
+            <Label layoutX="27.0" layoutY="212.0" styleClass="label_semplice" text="Costo :" />
+            <TextField fx:id="txtCosto" focusTraversable="false" layoutX="27.0" layoutY="227.0" prefHeight="25.0" prefWidth="298.0" promptText="100.00 . . . . ." styleClass="textbox_semplice" />
+            <Label fx:id="lblErroreCosto" layoutX="27.0" layoutY="255.0" prefHeight="25.0" prefWidth="298.0" styleClass="label_errore" />
+         </children>
+      </Pane>
+      <Pane layoutY="425.0" prefHeight="65.0" prefWidth="387.0" styleClass="sfondo">
+         <children>
+            <Button fx:id="btnConferma" layoutX="255.0" layoutY="28.0" mnemonicParsing="false" onAction="#gestisciBottoneConferma" prefHeight="25.0" prefWidth="115.0" text="CONFERMA" />
+            <Button fx:id="btnAnnulla" layoutX="126.0" layoutY="28.0" mnemonicParsing="false" onAction="#gestisciBottoneAnnulla" prefHeight="25.0" prefWidth="115.0" text="ANNULLA" />
+         </children>
+      </Pane>
+      <Pane minWidth="-Infinity" prefHeight="89.0" prefWidth="451.0" styleClass="header">
+         <children>
+            <Label fx:id="lblTitolo" layoutX="25.0" layoutY="8.0" style="-fx-font-size: 50px;" styleClass="label_header" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

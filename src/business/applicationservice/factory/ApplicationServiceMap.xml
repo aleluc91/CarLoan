@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ASMap>
+
+  <Service id="nuovoCliente">
+    <class>ApplicationServiceCliente</class>
+    <method>crea</method>
+  </Service>
+  
+  <Service id="leggiAutenticazione">
+    <class>ApplicationServiceAutenticazione</class>
+    <method>leggi</method>
+  </Service>
+  
+  <Service id="cercaAutenticazione">
+     <class>ApplicationServiceAutenticazione</class>
+     <method>cerca</method>
+  </Service>
+  
+  <Service id="nuovaAgenzia">
+     <class>ApplicationServiceAgenzia</class>
+     <method>crea</method>
+  </Service>
+  
+  <Service id="leggiAgenzia">
+     <class>ApplicationServiceAgenzia</class>
+     <method>leggi</method>
+  </Service>
+  
+  <Service id="modificaAgenzia">
+     <class>ApplicationServiceAgenzia</class>
+     <method>modifica</method>
+  </Service>
+  
+  <Service id="eliminaAgenzia">
+     <class>ApplicationServiceAgenzia</class>
+     <method>elimina</method>
+  </Service>
+  
+  <Service id="nuovaFascia">
+     <class>ApplicationServiceFascia</class>
+     <method>crea</method>
+  </Service>
+  
+  <Service id="modificaFascia">
+     <class>ApplicationServiceFascia</class>
+     <method>modifica</method>
+  </Service>
+  
+  <Service id="leggiFascia">
+     <class>ApplicationServiceFascia</class>
+     <method>leggi</method>
+  </Service>
+  
+  <Service id="cercaFascia">
+     <class>ApplicationServiceFascia</class>
+     <method>cerca</method>
+  </Service>
+  
+  <Service id="eliminaFascia">
+     <class>ApplicationServiceFascia</class>
+     <method>elimina</method>
+  </Service>
+  
+  <Service id="nuovoModello">
+     <class>ApplicationServiceModello</class>
+     <method>crea</method>
+  </Service>
+  
+  <Service id="leggiModello">
+     <class>ApplicationServiceModello</class>
+     <method>leggi</method>
+  </Service>
+  
+  <Service id="cercaModello">
+     <class>ApplicationServiceModello</class>
+     <method>cerca</method>
+  </Service>
+  
+  <Service id="modificaModello">
+     <class>ApplicationServiceModello</class>
+     <method>modifica</method>
+  </Service>
+  
+  <Service id="eliminaModello">
+     <class>ApplicationServiceModello</class>
+     <method>elimina</method>
+  </Service>
+  
+  <Service id="nuovaMacchina">
+     <class>ApplicationServiceMacchina</class>
+     <method>crea</method>
+  </Service>
+  
+  <Service id="leggiMacchina">
+     <class>ApplicationServiceMacchina</class>
+     <method>leggi</method>
+  </Service>
+  
+  <Service id="modificaMacchina">
+     <class>ApplicationServiceMacchina</class>
+     <method>modifica</method>
+  </Service>
+  
+  <Service id="cercaMacchina">
+     <class>ApplicationServiceMacchina</class>
+     <method>cerca</method>
+  </Service>
+  
+  <Service id="modificaValoreMacchina">
+     <class>ApplicationServiceMacchina</class>
+     <method>modificaValore</method>
+  </Service>
+  
+  <Service id="eliminaMacchina">
+     <class>ApplicationServiceMacchina</class>
+     <method>elimina</method>
+  </Service>
+  
+  <Service id="nuovaTariffa">
+     <class>ApplicationServiceTariffa</class>
+     <method>crea</method>
+  </Service>
+  
+  <Service id="leggiTariffa">
+     <class>ApplicationServiceTariffa</class>
+     <method>leggi</method>
+  </Service>
+  
+  <Service id="modificaTariffa">
+     <class>ApplicationServiceTariffa</class>
+     <method>modifica</method>
+  </Service>
+  
+  <Service id="cercaTariffa">
+     <class>ApplicationServiceTariffa</class>
+     <method>cerca</method>
+  </Service>
+  
+  <Service id="eliminaTariffa">
+     <class>ApplicationServiceTariffa</class>
+     <method>elimina</method>
+  </Service>
+  
+  <Service id="nuovoContratto">
+      <class>ApplicationServiceContratto</class>
+      <method>crea</method>
+  </Service>
+  
+  <Service id="leggiContratto">
+      <class>ApplicationServiceContratto</class>
+      <method>leggi</method>
+  </Service>
+  
+  <Service id="cercaContratto">
+      <class>ApplicationServiceContratto</class>
+      <method>cerca</method>
+  </Service>
+  
+  <Service id="modificaValoreContratto">
+      <class>ApplicationServiceContratto</class>
+      <method>modificaValore</method>
+  </Service>
+  
+   <Service id="nuovoNoleggio">
+      <class>ApplicationServiceNoleggio</class>
+      <method>crea</method>
+  </Service>
+  
+  <Service id="leggiNoleggio">
+      <class>ApplicationServiceNoleggio</class>
+      <method>leggi</method>
+  </Service>
+  
+  <Service id="cercaNoleggio">
+      <class>ApplicationServiceNoleggio</class>
+      <method>cerca</method>
+  </Service>
+  
+</ASMap>

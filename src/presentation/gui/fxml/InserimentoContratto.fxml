@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" minWidth="-Infinity" prefHeight="535.0" prefWidth="422.0" styleClass="sfondo" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.control.ControllerInserimentoNuovoContratto">
+   <children>
+      <Pane layoutX="44.0" layoutY="100.0" prefHeight="362.0" prefWidth="335.0" styleClass="pannello_semplice">
+         <children>
+            <Label layoutX="43.0" layoutY="26.0" styleClass="label_semplice" text="Codice contratto :" />
+            <Label fx:id="lblCodiceContratto" layoutX="43.0" layoutY="43.0" prefHeight="17.0" prefWidth="86.0" styleClass="label_semplice" />
+            <Label fx:id="lblErroreTelefono" layoutX="43.0" layoutY="321.0" prefHeight="25.0" prefWidth="233.0" styleClass="label_errore" />
+            <TextField fx:id="txtTelefono" layoutX="43.0" layoutY="296.0" prefHeight="25.0" prefWidth="233.0" styleClass="textbox_semplice" />
+            <Label layoutX="43.0" layoutY="280.0" styleClass="label_semplice" text="Numero di telefono :" />
+            <Label fx:id="lblErroreCognome" layoutX="43.0" layoutY="229.0" prefHeight="25.0" prefWidth="233.0" styleClass="label_errore" />
+            <TextField fx:id="txtCognome" layoutX="43.0" layoutY="204.0" prefHeight="25.0" prefWidth="233.0" styleClass="textbox_semplice" />
+            <Label layoutX="43.0" layoutY="187.0" styleClass="label_semplice" text="Cognome :" />
+            <Label fx:id="lblErroreNome" layoutX="43.0" layoutY="136.0" prefHeight="25.0" prefWidth="233.0" styleClass="label_errore" />
+            <TextField fx:id="txtNome" layoutX="43.0" layoutY="111.0" prefHeight="25.0" prefWidth="233.0" styleClass="textbox_semplice" />
+            <Label layoutX="43.0" layoutY="94.0" styleClass="label_semplice" text="Nome :" />
+         </children>
+      </Pane>
+      <Button fx:id="btnAvanti" layoutX="254.0" layoutY="483.0" mnemonicParsing="false" onAction="#gestisciBottoneAvanti" prefHeight="25.0" prefWidth="123.0" styleClass="bottone" text="AVANTI" />
+      <Pane minWidth="-Infinity" prefHeight="81.0" prefWidth="508.0" styleClass="header">
+         <children>
+            <Label layoutX="118.0" layoutY="15.0" styleClass="label_header2" text="Nuovo Contratto" />
+            <ImageView fx:id="imgPrincipale" fitHeight="62.0" fitWidth="86.0" layoutX="35.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Button fx:id="btnAnnulla" layoutX="118.0" layoutY="483.0" mnemonicParsing="false" onAction="#gestisciBottoneAnnulla" prefHeight="27.0" prefWidth="123.0" text="ANNULLA" />
+   </children>
+</AnchorPane>

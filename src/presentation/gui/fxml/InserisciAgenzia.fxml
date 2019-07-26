@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="441.0" prefWidth="326.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.control.ControllerInserimentoAgenzia">
+   <children>
+      <Pane prefHeight="358.0" prefWidth="358.0">
+         <children>
+            <Label layoutX="79.0" layoutY="14.0" text="Codice agenzia :" />
+            <TextField fx:id="txtCodiceAgenzia" layoutX="79.0" layoutY="31.0" prefHeight="25.0" prefWidth="204.0" />
+            <Label fx:id="lblErroreCodice" layoutX="80.0" layoutY="56.0" prefHeight="17.0" prefWidth="204.0" />
+            <Label layoutX="80.0" layoutY="77.0" text="Nome Agenzia :" />
+            <TextField fx:id="txtNomeAgenzia" layoutX="79.0" layoutY="94.0" prefHeight="25.0" prefWidth="204.0" />
+            <Label fx:id="lblErroreNome" layoutX="80.0" layoutY="119.0" prefHeight="17.0" prefWidth="204.0" />
+            <Label layoutX="79.0" layoutY="142.0" text="Indirizzo :" />
+            <TextField fx:id="txtIndirizzo" layoutX="79.0" layoutY="159.0" prefHeight="25.0" prefWidth="204.0" />
+            <Label fx:id="lblErroreIndirizzo" layoutX="80.0" layoutY="184.0" prefHeight="17.0" prefWidth="204.0" />
+            <Label layoutX="83.0" layoutY="211.0" text="Città :" />
+            <TextField fx:id="txtCitta" layoutX="81.0" layoutY="228.0" prefHeight="25.0" prefWidth="204.0" />
+            <Label fx:id="lblErroreCitta" layoutX="81.0" layoutY="253.0" prefHeight="17.0" prefWidth="204.0" />
+            <Label layoutX="81.0" layoutY="277.0" text="CAP :" />
+            <TextField fx:id="txtCAP" layoutX="81.0" layoutY="294.0" prefHeight="25.0" prefWidth="204.0" />
+            <Label fx:id="lblErroreCAP" layoutX="81.0" layoutY="319.0" prefHeight="17.0" prefWidth="204.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="-2.0" layoutY="354.0" prefHeight="73.0" prefWidth="350.0">
+         <children>
+            <Button fx:id="btnConferma" layoutX="175.0" layoutY="24.0" mnemonicParsing="false" onAction="#gestisciBottoneConferma" prefHeight="25.0" prefWidth="121.0" text="Conferma" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

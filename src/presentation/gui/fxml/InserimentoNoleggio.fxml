@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" minWidth="-Infinity" prefHeight="482.0" prefWidth="576.0" styleClass="sfondo" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.gui.control.ControllerInserimentoNoleggio">
+   <children>
+      <Pane layoutX="37.0" layoutY="114.0" prefHeight="300.0" prefWidth="503.0" styleClass="pannello_semplice">
+         <children>
+         	<Label layoutX="21.0" layoutY="220.0" styleClass="label_semplice" text="Macchina :" />
+         	<Label layoutX="260.0" layoutY="123.0" styleClass="label_semplice" text="Modello :" />
+         	<Label fx:id="lblErroreMacchina" layoutX="21.0" layoutY="268.0" prefHeight="25.0" prefWidth="186.0" styleClass="label_errore" />
+         	<ComboBox fx:id="cmbBase" layoutX="21.0" layoutY="49.0" prefHeight="25.0" prefWidth="186.0" styleClass="textbox_semplice" />
+         	<Label fx:id="lblErroreBase" layoutX="21.0" layoutY="78.0" prefHeight="25.0" prefWidth="186.0" styleClass="label_errore" />
+         	<Label fx:id="lblErroreChilometraggio" layoutX="260.0" layoutY="78.0" prefHeight="25.0" prefWidth="186.0" styleClass="label_errore" />
+         	<Label fx:id="lblContratto" layoutX="21.0" layoutY="123.0" prefHeight="17.0" prefWidth="180.0" styleClass="label_semplice" text="Fascia" />
+         	<ComboBox fx:id="cmbChilometraggio" layoutX="260.0" layoutY="49.0" prefHeight="25.0" prefWidth="186.0" styleClass="textbox_semplice" />
+         	<Label layoutX="21.0" layoutY="32.0" prefHeight="17.0" prefWidth="186.0" styleClass="label_semplice" text="Base :" />
+         	<ComboBox fx:id="cmbModello" layoutX="260.0" layoutY="144.0" prefHeight="25.0" prefWidth="186.0" styleClass="textbox_semplice" />
+         	<Label fx:id="lblErroreFascia" layoutX="21.0" layoutY="175.0" prefHeight="25.0" prefWidth="186.0" styleClass="label_errore" />
+         	<ComboBox fx:id="cmbFascia" layoutX="21.0" layoutY="144.0" prefHeight="25.0" prefWidth="186.0" styleClass="textbox_semplice" />
+         	<Label fx:id="lblErroreModello" layoutX="260.0" layoutY="175.0" prefHeight="25.0" prefWidth="186.0" styleClass="label_errore" />
+         	<ComboBox fx:id="cmbMacchina" layoutX="21.0" layoutY="237.0" prefHeight="25.0" prefWidth="186.0" styleClass="textbox_semplice" />
+         	<Label layoutX="260.0" layoutY="32.0" prefHeight="17.0" prefWidth="186.0" styleClass="label_semplice" text="Chilometraggio :" />
+         </children>
+      </Pane>
+      <Button fx:id="btnAvanti" layoutX="402.0" layoutY="437.0" mnemonicParsing="false" onAction="#gestisciBottoneAvanti" prefHeight="25.0" prefWidth="138.0" styleClass="bottone" text="AVANTI" />
+      <Pane minWidth="-Infinity" prefHeight="89.0" prefWidth="662.0" styleClass="header">
+         <children>
+            <Label layoutX="110.0" layoutY="8.0" styleClass="label_header" text="Nuovo Noleggio" />
+         </children>
+      </Pane>
+      <Button fx:id="btnAnnulla" layoutX="252.0" layoutY="437.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="138.0" text="ANNULLA" />
+   </children>
+</AnchorPane>
